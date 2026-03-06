@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     font-size: 1.7rem;
+    color: #C66D00;
+    background-color: #F5EFE4;
+    height: 18vh;
+    font-weight: 600;
+    padding: 0px 3rem;
+}
+nav a{
+      color: #C66D00;
+      font: inherit; 
+}
+nav a:hover{
+    color: #a1651b;
+}
+.Divtitulo{
+    background-color: #D56138;
+    height: auto;
+    max-height: 23rem;
+
+    display: flex;
+    align-items: center; 
+    text-align: center;
+}
+.Titulo {
+    margin: 0;
+    padding: 0px 3rem;
+    color: #F5EFE4;
+    font-size: clamp(2.5rem, 7vw, 8rem);
+}
+.FeijoadaIMG{
+    max-width:150%;
+    position: relative;
+    top: 0.5rem;
+}
+.Instrucoes{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    background-color: #E3BE9B;
+    padding: 5rem;
+    gap: 4rem;
+}
+
+.Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 25rem;
+    width: 17rem;
+    border-radius: 3rem;
+    background-color: #F5EFE4;
+}
+.Card:hover{
+    background-color: #e6dacc;
+}
+.TituloSecao{
+    margin: 0;
+    color: #70111B;
+    font-size: 3.2rem
+}
+.ContainerCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.Imgcards{
+    max-width:80%;
+    height:auto;
+}
+.Cardsubtitle{
+    text-align: center;
+    margin: 0;
+    font-size: 1.6rem;
+    color: #D56138;
+}
+.Regiões{
+    background-color: #F5EFE4;
+    height: auto
+}
+.Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5A3A2E;
+    color: #F5EFE4;
+    padding: 1.7rem 0;
+    font-size: 1rem;
+}
+.Footerparagrafo{
+    margin: 0;
+}
