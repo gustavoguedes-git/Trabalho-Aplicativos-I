@@ -103,3 +103,9 @@ nav a:hover{
 .Footerparagrafo{
     margin: 0;
 }
+
+.TituloRegioes{
+    text-align: center;
+    font-size: 3rem;
+    color: #70111B;
+}
