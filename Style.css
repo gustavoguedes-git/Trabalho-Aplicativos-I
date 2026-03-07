@@ -63,6 +63,7 @@ nav a:hover{
 }
 .Card:hover{
     background-color: #e6dacc;
+    transition: 0.2s;
 }
 .TituloSecao{
     margin: 0;
@@ -87,10 +88,6 @@ nav a:hover{
     font-size: 1.6rem;
     color: #D56138;
 }
-.Regiões{
-    background-color: #F5EFE4;
-    height: auto
-}
 .Footer{
     display: flex;
     align-items: center;
@@ -103,9 +100,35 @@ nav a:hover{
 .Footerparagrafo{
     margin: 0;
 }
-
 .TituloRegioes{
-    text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #70111B;
+    text-align: center; 
+}
+.Regioes{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.region-button{
+    height: 12rem;
+    width: 11rem;
+
+    border-style: none ;
+    border-radius: 1.2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: rgb(245,239,228);
+    color: rgb(213,97,56);
+}
+.region-button:hover{
+    transition: 0.3s;
+    background-color:#E3BE9B;
+
+}
+.BotoesRegioes{
+    display: flex;
+    gap: 1rem;
 }
