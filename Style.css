@@ -132,3 +132,53 @@ nav a:hover{
     display: flex;
     gap: 1rem;
 }
+/* Pagina 2*/
+.TacacaFundo{
+    background-color: #D56138;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.TacacaImg{
+    padding-top: 2rem;
+    max-width: 40%;
+    position: relative;
+}
+.Ingredientes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60rem;
+    background-color:#E3BE9B;
+    
+}
+.TacacaSubtitle{
+    margin: 0;
+    font-size: 6rem;
+    padding: 2rem 3rem;
+    color: #70111B;
+}
+.Ingredientes-Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40rem;
+    width: 60rem;
+    border-radius: 5rem;
+    background-color: #F5EFE4;
+}
+.Ingredientes-Div h3{
+    margin: 0;
+    padding-left: 2.5rem;
+    font-size: 3rem;
+    color: #70111B;
+}
+.Ingredientes-Div ul li{
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    color: #701119;
+}
+.Ingredientes-Div ul{
+    padding-left: 6.5rem;
+}
