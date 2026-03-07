@@ -150,8 +150,7 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     height: 60rem;
-    background-color:#E3BE9B;
-    
+    background-color:#E3BE9B; 
 }
 .TacacaSubtitle{
     margin: 0;
@@ -181,4 +180,36 @@ nav a:hover{
 }
 .Ingredientes-Div ul{
     padding-left: 6.5rem;
+    color: #D56138;
+}
+.Ingredientes-Div ul li::marker {
+    color: #D56138; 
+    font-size: 2rem; 
+}
+.MododePreparo-Fundo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    height: 95rem;
+    background-color: #F5EFE4;
+}
+.ModoDepreparo-Title{
+    margin-top: 0;
+    padding-left: 6rem ;
+    font-size: 4rem;
+    color: #70111B;
+}
+.MododePreparo-Div ol li{
+    padding: 1.3rem;
+    font-size: 2rem;
+    color: #D56138;
+}
+.MododePreparo-Div ol{
+    padding: 1.3rem;
+    padding-left: 9rem;
+}
+.MododePreparo-Div p{
+    font-size: 2rem;
+    color: #70111B;
 }
