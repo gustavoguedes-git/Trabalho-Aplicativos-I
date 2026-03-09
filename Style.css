@@ -21,13 +21,12 @@ nav a:hover{
     color: #a1651b;
 }
 .Divtitulo{
-    background-color: #D56138;
-    height: auto;
-    max-height: 23rem;
-
     display: flex;
     align-items: center; 
     text-align: center;
+    height: auto;
+    max-height: 23rem;
+    background-color: #D56138;
 }
 .Titulo {
     margin: 0;
@@ -101,9 +100,10 @@ nav a:hover{
     margin: 0;
 }
 .TituloRegioes{
+    padding-bottom: 2rem;
     font-size: 2.5rem;
-    color: #70111B;
     text-align: center; 
+    color: #70111B;
 }
 .Regioes{
     height: 30rem;
@@ -132,31 +132,13 @@ nav a:hover{
     display: flex;
     gap: 1rem;
 }
-/* Pagina 2*/
-.TacacaFundo{
-    background-color: #D56138;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.TacacaImg{
-    padding-top: 2rem;
-    max-width: 40%;
-    position: relative;
-}
+/* Usado em todas as paginas de região */
 .Ingredientes{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 60rem;
     background-color:#E3BE9B; 
-}
-.TacacaSubtitle{
-    margin: 0;
-    font-size: 6rem;
-    padding: 2rem 3rem;
-    color: #70111B;
 }
 .Ingredientes-Div{
     display: flex;
@@ -197,7 +179,7 @@ nav a:hover{
 .ModoDepreparo-Title{
     margin-top: 0;
     padding-left: 6rem ;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #70111B;
 }
 .MododePreparo-Div ol li{
@@ -212,4 +194,179 @@ nav a:hover{
 .MododePreparo-Div p{
     font-size: 2rem;
     color: #70111B;
+}
+.Historia-Fundo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 80rem;
+    background-color: #E3BE9B;
+}
+.Historia-Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 55rem;
+    height: 62rem;
+    border-radius: 3rem;
+    background-color: #F5EFE4;
+}
+.Historia-Card h3{
+    margin: 0;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    color: #D56138;
+}
+.Historia-Card p{
+    text-align: center;
+    margin: 0;
+    font-size: 1.8rem;
+    padding: 2rem;
+    line-height: 2.3rem;
+    color: #70111B;
+}
+
+/* Pagina 2 - Região Norte*/
+.TacacaFundo{
+    background-color: #D56138;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.TacacaImg{
+    padding-top: 2rem;
+    max-width: 40%;
+    position: relative;
+}
+
+.TacacaSubtitle{
+    margin: 0;
+    font-size: 6rem;
+    padding: 2rem 3rem;
+    color: #70111B;
+}
+.ImgHistoriaTacaca{
+    display: block; 
+    width: 100%;
+    height: 40%;
+}
+/* Terceira Pagina - Região Nordeste*/
+.AcarajéFundo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    background-color: #D56138;
+}
+.AcarajéImg{
+    width: 40%;
+    padding-top: 3rem;
+}
+.AcarajéSubtitle{
+    margin: 0;
+    padding: 2rem 3rem;
+    font-size: 6rem;
+    color: #70111B;
+}
+.ImgHistoriaAcarajé{
+    display: block;
+    width: 100%;
+    height: 40%;
+}
+/*Pagina 4 - Centro-Oeste*/
+.ArrozComPequiFundo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    background-color: #D56138;
+}
+.ArrozComPequiImg{
+   max-width: 40%;
+}
+.ArrozCPequiSubtitle{
+    margin: 0;
+    padding: 2rem 3rem;
+    font-size: 5rem;
+    color: #70111B;
+}
+.ImgHistoria-ArrozComPequi{
+    display: block;
+    width: 100%;
+    height: 40%;
+}
+/*Pagina 5 - Sudeste */
+.FeijoadaFundo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    background-color: #D56138;
+}
+.FeijoadaImgSudeste{
+    max-width: 35%;
+}
+.FeijoadaSubtitle{
+    margin: 0;
+    padding: 2rem 3rem;
+    font-size: 5rem;
+    color: #70111B;
+}
+.ImgHistoriaFeijoada{
+    display: block;
+    width: 100%;
+    height: 40%;
+}
+/*Pagina 6 - Sul */
+.ChurrascoFundo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    background-color: #D56138;
+}
+.ChurrascoGauchoImg{
+    width: 40%;
+    padding-bottom: 3rem;
+}
+.ChurrascoSubtitle{
+    margin: 0;
+    padding: 2rem 3rem;
+    font-size: 4.5rem;
+    color: #70111B;
+}
+.Ingredientes-Div-Sul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30rem;
+    width: 60rem;
+    border-radius: 5rem;
+    background-color: #F5EFE4;
+}
+.Ingredientes-Div-Sul h3{
+    margin: 0;
+    padding-left: 2.5rem;
+    font-size: 3rem;
+    color: #70111B;
+}
+.Ingredientes-Div-Sul ul{
+    padding-left: 6.5rem;
+}
+.Ingredientes-Div-Sul ul li::marker{
+    color: #D56138;
+}
+.Ingredientes-Div-Sul ul li{
+    font-size: 2rem;
+    color: #70111B;
+    line-height: 4rem;
+}
+.ImgHistoriachurrascogaucho{
+    display: block;
+    width: 100%;
+    height: 40%;
 }
