@@ -31,12 +31,12 @@ nav a:hover{
 .Titulo {
     margin: 0;
     padding: 0px 3rem;
-    color: #F5EFE4;
     font-size: clamp(2.5rem, 7vw, 8rem);
+    color: #F5EFE4;
 }
 .FeijoadaIMG{
-    max-width:150%;
     position: relative;
+    max-width:150%;
     top: 0.5rem;
 }
 .Instrucoes{
@@ -58,11 +58,8 @@ nav a:hover{
     height: 25rem;
     width: 17rem;
     border-radius: 3rem;
+    box-shadow: 0.15rem 0rem 1.5rem 0.1rem #ab8a8a;
     background-color: #F5EFE4;
-}
-.Card:hover{
-    background-color: #e6dacc;
-    transition: 0.2s;
 }
 .TituloSecao{
     margin: 0;
@@ -73,8 +70,8 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
     flex-wrap: wrap;
+    gap: 4rem;
 }
 
 .Imgcards{
@@ -91,19 +88,13 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #5A3A2E;
-    color: #F5EFE4;
     padding: 1.7rem 0;
     font-size: 1rem;
+    background-color: #5A3A2E;
+    color: #F5EFE4;
 }
 .Footerparagrafo{
     margin: 0;
-}
-.TituloRegioes{
-    padding-bottom: 2rem;
-    font-size: 2.5rem;
-    text-align: center; 
-    color: #70111B;
 }
 .Regioes{
     height: 30rem;
@@ -111,6 +102,12 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.TituloRegioes{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center; 
+    color: #70111B;
 }
 .region-button{
     height: 12rem;
@@ -124,13 +121,14 @@ nav a:hover{
     color: rgb(213,97,56);
 }
 .region-button:hover{
-    transition: 0.3s;
-    background-color:#E3BE9B;
+    transition: 0.15s;
+    background-color:#e6ded5;
+    box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
 
 }
 .BotoesRegioes{
     display: flex;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 /* Usado em todas as paginas de região */
 .Ingredientes{
@@ -147,6 +145,7 @@ nav a:hover{
     height: 40rem;
     width: 60rem;
     border-radius: 5rem;
+    box-shadow: 0.3rem 0.3rem 1.5rem 0.1rem #555;
     background-color: #F5EFE4;
 }
 .Ingredientes-Div h3{
@@ -231,11 +230,10 @@ nav a:hover{
 
 /* Pagina 2 - Região Norte*/
 .TacacaFundo{
-    background-color: #D56138;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    background-color: #D56138;
 }
 .TacacaImg{
     padding-top: 2rem;
@@ -339,6 +337,13 @@ nav a:hover{
     font-size: 4.5rem;
     color: #70111B;
 }
+.Ingredientes-sul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45rem;
+    background-color:#E3BE9B; 
+}
 .Ingredientes-Div-Sul{
     display: flex;
     flex-direction: column;
@@ -346,6 +351,7 @@ nav a:hover{
     height: 30rem;
     width: 60rem;
     border-radius: 5rem;
+    box-shadow: 0.3rem 0.3rem 1rem 0.1rem #555;
     background-color: #F5EFE4;
 }
 .Ingredientes-Div-Sul h3{
