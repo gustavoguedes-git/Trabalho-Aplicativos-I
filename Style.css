@@ -6,16 +6,16 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-     font-size: 1.7rem;
-    color: #C66D00;
-    background-color: #F5EFE4;
+    font-size: 1.7rem;
     height: 18vh;
     font-weight: 600;
     padding: 0px 3rem;
+    color: #C66D00;
+    background-color: #F5EFE4;
 }
 nav a{
-      color: #C66D00;
-      font: inherit; 
+    font: inherit; 
+    color: #C66D00;
 }
 nav a:hover{
     color: #a1651b;
@@ -66,6 +66,12 @@ nav a:hover{
     color: #70111B;
     font-size: 3.2rem
 }
+.TituloSecao-Zero{
+    text-decoration: underline;
+    text-decoration-color: #d46a2e;
+    text-decoration-thickness: 0.4rem;
+    text-underline-offset: 0.25rem;
+}
 .ContainerCards{
     display: flex;
     align-items: center;
@@ -110,25 +116,43 @@ nav a:hover{
     color: #70111B;
 }
 .region-button{
+    cursor: pointer;
+    border-style: none;
     height: 12rem;
     width: 11rem;
-
-    border-style: none ;
     border-radius: 1.2rem;
     font-size: 1.3rem;
-    cursor: pointer;
+    transition: 0.15s;
     background-color: rgb(245,239,228);
-    color: rgb(213,97,56);
 }
 .region-button:hover{
-    transition: 0.15s;
     background-color:#e6ded5;
     box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
 
 }
+#Button1{
+    border:  solid 0.1rem #2E8B57;
+    color: #2E8B57;
+}
+#Button2{
+    border: solid 0.1rem rgb(213,97,56);
+    color: #D56138;
+}
+#Button3{
+    border: solid 0.1rem #D4A017;
+    color:#D4A017;
+}
+#Button4{
+    border: solid 0.1rem #8B1E3F;
+    color: #8B1E3F;
+}
+#Button5{
+    border:  solid 0.1rem #2C5AA0;
+    color: #2C5AA0;
+}
 .BotoesRegioes{
     display: flex;
-    gap: 2.5rem;
+    gap: 1.8rem;
 }
 /* Usado em todas as paginas de região */
 .Ingredientes{
@@ -145,7 +169,7 @@ nav a:hover{
     height: 40rem;
     width: 60rem;
     border-radius: 5rem;
-    box-shadow: 0.3rem 0.3rem 1.5rem 0.1rem #555;
+    box-shadow: 0.3rem 0.3rem 2rem 0.2rem rgb(165, 136, 124);
     background-color: #F5EFE4;
 }
 .Ingredientes-Div h3{
@@ -172,7 +196,7 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    height: 95rem;
+    height: 97rem;
     background-color: #F5EFE4;
 }
 .ModoDepreparo-Title{
@@ -213,7 +237,7 @@ nav a:hover{
     border-radius: 3rem;
     background-color: #F5EFE4;
 }
-.Historia-Card h3{
+.Historia-Card h2{
     margin: 0;
     padding-top: 3rem;
     font-size: 2.5rem;
@@ -226,6 +250,15 @@ nav a:hover{
     padding: 2rem;
     line-height: 2.3rem;
     color: #70111B;
+}
+.ImgHistoriaTacaca,
+.ImgHistoriaAcarajé,
+.ImgHistoria-ArrozComPequi,
+.ImgHistoriaFeijoada,
+.ImgHistoriachurrascogaucho{
+    display:block;
+    width:100%;
+    height:40%;
 }
 
 /* Pagina 2 - Região Norte*/
@@ -247,22 +280,17 @@ nav a:hover{
     padding: 2rem 3rem;
     color: #70111B;
 }
-.ImgHistoriaTacaca{
-    display: block; 
-    width: 100%;
-    height: 40%;
-}
 /* Terceira Pagina - Região Nordeste*/
 .AcarajéFundo{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30rem;
+    height: 25rem;
     background-color: #D56138;
 }
 .AcarajéImg{
     width: 40%;
-    padding-top: 3rem;
+    padding-bottom: 1.5rem;
 }
 .AcarajéSubtitle{
     margin: 0;
@@ -270,32 +298,22 @@ nav a:hover{
     font-size: 6rem;
     color: #70111B;
 }
-.ImgHistoriaAcarajé{
-    display: block;
-    width: 100%;
-    height: 40%;
-}
 /*Pagina 4 - Centro-Oeste*/
 .ArrozComPequiFundo{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30rem;
+    height: 25rem;
     background-color: #D56138;
 }
 .ArrozComPequiImg{
-   max-width: 40%;
+   max-width: 35%;
 }
 .ArrozCPequiSubtitle{
     margin: 0;
     padding: 2rem 3rem;
     font-size: 5rem;
     color: #70111B;
-}
-.ImgHistoria-ArrozComPequi{
-    display: block;
-    width: 100%;
-    height: 40%;
 }
 /*Pagina 5 - Sudeste */
 .FeijoadaFundo{
@@ -313,11 +331,6 @@ nav a:hover{
     padding: 2rem 3rem;
     font-size: 5rem;
     color: #70111B;
-}
-.ImgHistoriaFeijoada{
-    display: block;
-    width: 100%;
-    height: 40%;
 }
 /*Pagina 6 - Sul */
 .ChurrascoFundo{
@@ -370,9 +383,4 @@ nav a:hover{
     font-size: 2rem;
     color: #70111B;
     line-height: 4rem;
-}
-.ImgHistoriachurrascogaucho{
-    display: block;
-    width: 100%;
-    height: 40%;
 }
