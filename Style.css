@@ -37,9 +37,9 @@ nav a:hover{
 .Titulo {
     margin: 0;
     padding: 0px 3rem;
-    font-size: 7rem;
-    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39);
+    font-size: 5rem;
     color: #F5EFE4;
+    margin-right: 3rem;
 }
 .FeijoadaIMG{
     position: relative;
@@ -62,7 +62,7 @@ nav a:hover{
     height: 25rem;
     width: 17rem;
     border-radius: 3rem;
-    box-shadow: 0.15rem 0rem 1.5rem 0.1rem #ab8a8a;
+    box-shadow: 0.15rem 1.0rem 1.5rem 0.1rem #b6875b9c;
     background-color: #F5EFE4;
 }
 .TituloSecao{
@@ -129,7 +129,7 @@ nav a:hover{
 }
 .region-button:hover{
     background-color:#e6ded5;
-    box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
+    box-shadow: 0.1rem 0px 0.5rem 0.1rem #55555574;
 
 }
 #Button1{
@@ -178,7 +178,7 @@ nav a:hover{
     height: 40rem;
     width: 60rem;
     border-radius: 5rem;
-    box-shadow: 0.3rem 0.3rem 3rem 1rem #a74e1a84;
+    box-shadow: 0.15rem 1.0rem 1.5rem 0.1rem #b6875b9c;;
     background-color: #F5EFE4;
 }
 .Ingredientes-Div h3{
@@ -351,8 +351,7 @@ nav a:hover{
 .Titulo-SobreNos{
     text-align: center;
     margin: 0;
-    font-size: 6rem;
-    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39);
+    font-size: 5rem;
     color: #F5EFE4;
 
 }
@@ -371,7 +370,7 @@ nav a:hover{
     width: 60rem;
     border-radius: 3rem;
     background-color: #F5EFE4;
-    box-shadow: 0.3rem 0.3rem 2rem 0.5rem #b1673c83;
+    box-shadow: 0.15rem 1.0rem 1.5rem 0.1rem #b6875b9c;
 }
 .MembrosEquipe-Div h2{
     text-align: center;
