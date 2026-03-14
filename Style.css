@@ -2,6 +2,12 @@ body{
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
+/* Classe utilitária para centralizar com flex */
+.flex-center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -31,7 +37,8 @@ nav a:hover{
 .Titulo {
     margin: 0;
     padding: 0px 3rem;
-    font-size: clamp(2.5rem, 7vw, 8rem);
+    font-size: 7rem;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39);
     color: #F5EFE4;
 }
 .FeijoadaIMG{
@@ -50,10 +57,7 @@ nav a:hover{
 }
 
 .Card{
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     height: 25rem;
     width: 17rem;
@@ -91,9 +95,6 @@ nav a:hover{
     color: #D56138;
 }
 .Footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 1.7rem 0;
     font-size: 1rem;
     background-color: #5A3A2E;
@@ -118,6 +119,7 @@ nav a:hover{
 .region-button{
     cursor: pointer;
     border-style: none;
+    user-select: none;
     height: 12rem;
     width: 11rem;
     border-radius: 1.2rem;
@@ -155,6 +157,13 @@ nav a:hover{
     gap: 1.8rem;
 }
 /* Usado em todas as paginas de região */
+.header-receita{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: auto;
+    background-color: #D56138;
+}
 .Ingredientes{
     display: flex;
     flex-direction: column;
@@ -169,7 +178,7 @@ nav a:hover{
     height: 40rem;
     width: 60rem;
     border-radius: 5rem;
-    box-shadow: 0.3rem 0.3rem 2rem 0.2rem rgb(165, 136, 124);
+    box-shadow: 0.3rem 0.3rem 3rem 1rem #a74e1a84;
     background-color: #F5EFE4;
 }
 .Ingredientes-Div h3{
@@ -196,12 +205,12 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    height: 97rem;
+    height: 95rem;
     background-color: #F5EFE4;
 }
 .ModoDepreparo-Title{
     margin-top: 0;
-    padding-left: 6rem ;
+    padding-left: 6rem;
     font-size: 3rem;
     color: #70111B;
 }
@@ -219,9 +228,6 @@ nav a:hover{
     color: #70111B;
 }
 .Historia-Fundo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
     height: 80rem;
     background-color: #E3BE9B;
@@ -262,12 +268,6 @@ nav a:hover{
 }
 
 /* Pagina 2 - Região Norte*/
-.TacacaFundo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #D56138;
-}
 .TacacaImg{
     padding-top: 2rem;
     max-width: 40%;
@@ -281,13 +281,6 @@ nav a:hover{
     color: #70111B;
 }
 /* Terceira Pagina - Região Nordeste*/
-.AcarajéFundo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25rem;
-    background-color: #D56138;
-}
 .AcarajéImg{
     width: 40%;
     padding-bottom: 1.5rem;
@@ -299,15 +292,8 @@ nav a:hover{
     color: #70111B;
 }
 /*Pagina 4 - Centro-Oeste*/
-.ArrozComPequiFundo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25rem;
-    background-color: #D56138;
-}
 .ArrozComPequiImg{
-   max-width: 35%;
+   max-width: 40%;
 }
 .ArrozCPequiSubtitle{
     margin: 0;
@@ -316,15 +302,8 @@ nav a:hover{
     color: #70111B;
 }
 /*Pagina 5 - Sudeste */
-.FeijoadaFundo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25rem;
-    background-color: #D56138;
-}
 .FeijoadaImgSudeste{
-    max-width: 35%;
+    width: 40%;
 }
 .FeijoadaSubtitle{
     margin: 0;
@@ -334,9 +313,6 @@ nav a:hover{
 }
 /*Pagina 6 - Sul */
 .ChurrascoFundo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 25rem;
     background-color: #D56138;
 }
@@ -357,30 +333,78 @@ nav a:hover{
     height: 45rem;
     background-color:#E3BE9B; 
 }
-.Ingredientes-Div-Sul{
+#Ingredientes-Div-Sul{
+    display: flex;
+    height: 25rem;
+    width: 60rem;
+}
+#ModoDePreparo-Sul{
+    height: 80rem;
+}
+/*Pagina Sobre Nós*/
+.Titulo-SobreNos-Fundo{
+    display: grid;
+    place-items: center;
+    height: 23rem;
+    background-color: #D56138;
+}
+.Titulo-SobreNos{
+    text-align: center;
+    margin: 0;
+    font-size: 6rem;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39);
+    color: #F5EFE4;
+
+}
+.MembrosEquipe-Fundo{
+    height: 95rem;
+    background-color: #E3BE9B;
+    display: grid;
+    place-items: center;
+}
+.MembrosEquipe-Div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 30rem;
+    box-sizing: border-box;
+    padding: 4rem;
+    height: 85rem;
     width: 60rem;
-    border-radius: 5rem;
-    box-shadow: 0.3rem 0.3rem 1rem 0.1rem #555;
+    border-radius: 3rem;
     background-color: #F5EFE4;
+    box-shadow: 0.3rem 0.3rem 2rem 0.5rem #b1673c83;
 }
-.Ingredientes-Div-Sul h3{
+.MembrosEquipe-Div h2{
+    text-align: center;
     margin: 0;
-    padding-left: 2.5rem;
-    font-size: 3rem;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
     color: #70111B;
+
 }
-.Ingredientes-Div-Sul ul{
-    padding-left: 6.5rem;
+.CardMembros{
+    display: flex;
+    padding-top: 2.5rem;
 }
-.Ingredientes-Div-Sul ul li::marker{
+.CardMembros img{
+    width: 33%;
+}
+.InfoMembro{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.InfoMembro h4{
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
     color: #D56138;
 }
-.Ingredientes-Div-Sul ul li{
-    font-size: 2rem;
+.InfoMembro p{
+    margin-top: 1rem;
     color: #70111B;
-    line-height: 4rem;
+}
+.ImgMembros{
+   height: 20rem;
+   width: 20rem;
+   border-radius: 2rem;
 }
