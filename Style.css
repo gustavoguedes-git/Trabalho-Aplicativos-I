@@ -2,7 +2,7 @@ body{
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
-/* Classes utilitárias para centralizar com flex */
+/* Classes utilitárias */
 .flex-center{
     display:flex;
     align-items:center;
@@ -16,7 +16,7 @@ body{
 }
 .ReceitaImg{
     width: 40%;
-}
+} /*Pagina Inicial */
 nav{
     display: flex;
     justify-content: space-between;
@@ -109,6 +109,7 @@ nav a:hover{
 .Footerparagrafo{
     margin: 0;
 }
+/* Usado nas paginas de regiões e na inicial */
 .Regioes{
     height: 30rem;
     display: flex;
@@ -306,7 +307,7 @@ nav a:hover{
     text-align: center;
     margin: 0;
     font-size: 6rem;
-    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39);
+    text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.39);
     color: #F5EFE4;
 
 }
@@ -358,3 +359,4 @@ nav a:hover{
    width: 20rem;
    border-radius: 2rem;
 }
+
