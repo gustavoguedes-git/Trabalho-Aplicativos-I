@@ -15,7 +15,7 @@ body{
     color: #70111B;
 }
 .ReceitaImg{
-    height: 25rem;
+    height: 30rem;
 } /*Pagina Inicial */
 nav{
     display: flex;
@@ -137,7 +137,7 @@ nav a:hover{
 .region-button:hover{
     background-color:#e6ded5;
     box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
 
 }
 #Button1{
@@ -176,11 +176,8 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-direction: column;
-    align-items: center;
     height: 60rem;
     background-color: #E3BE9B;
-    background-color:#E3BE9B; 
 }
 .Ingredientes-Div{
     display: flex;
@@ -216,7 +213,7 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    height: 95rem;
+    height: 100rem;
     background-color: #F5EFE4;
 }
 .ModoDepreparo-Title{
@@ -279,6 +276,7 @@ nav a:hover{
 }
 /*Paginas Recitas */
 .TacacaImg{
+    height: 30rem;
     padding-top: 2rem;
 }
 .Ingredientes-sul{
@@ -289,10 +287,9 @@ nav a:hover{
     background-color:#E3BE9B; 
 }
 #Ingredientes-Div-Sul{
-    display: flex;
     height: 25rem;
-    width: 60rem;
 }
+
 #ModoDePreparo-Sul{
     height: 80rem;
 }
@@ -307,7 +304,6 @@ nav a:hover{
     text-align: center;
     margin: 0;
     font-size: 6rem;
-    text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.39);
     color: #F5EFE4;
 
 }
