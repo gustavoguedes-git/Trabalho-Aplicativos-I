@@ -15,7 +15,7 @@ body{
     color: #70111B;
 }
 .ReceitaImg{
-    width: 40%;
+    height: 25rem;
 } /*Pagina Inicial */
 nav{
     display: flex;
@@ -52,7 +52,7 @@ nav a:hover{
 }
 .FeijoadaIMG{
     position: relative;
-    max-width:150%;
+    height: 33rem;
     top: 0.5rem;
 }
 .Instrucoes{
@@ -137,6 +137,7 @@ nav a:hover{
 .region-button:hover{
     background-color:#e6ded5;
     box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
+    transform: translateY(-10px);
 
 }
 #Button1{
@@ -175,7 +176,10 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    align-items: center;
     height: 60rem;
+    background-color: #E3BE9B;
     background-color:#E3BE9B; 
 }
 .Ingredientes-Div{
@@ -275,11 +279,7 @@ nav a:hover{
 }
 /*Paginas Recitas */
 .TacacaImg{
-    position: relative;
     padding-top: 2rem;
-}
-.ChurrascoImg{
-    width: 45%;
 }
 .Ingredientes-sul{
     display: flex;
@@ -359,4 +359,3 @@ nav a:hover{
    width: 20rem;
    border-radius: 2rem;
 }
-
