@@ -2,6 +2,7 @@ body{
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
+
 /*Nav bar e Footer */
 nav{
     display: flex;
@@ -30,22 +31,6 @@ nav a:hover{
 .Footerparagrafo{
     margin: 0;
 }
-/* Classes utilitárias */
-.flex-center{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-.ReceitaSubtitulo{
-    margin: 0;
-    padding: 2rem 3rem;
-    font-size: 5rem;
-    color: #70111B;
-}
-.ReceitaImg{
-    height: 30rem;
-}
-
 /* Classes utilitárias */
 .flex-center{
     display:flex;
@@ -130,6 +115,7 @@ nav a:hover{
     font-size: 1.6rem;
     color: #D56138;
 }
+
 /* Usado nas paginas de regiões e na inicial */
 .Regioes{
     height: 30rem;
@@ -181,6 +167,7 @@ nav a:hover{
     display: flex;
     gap: 1.8rem;
 }
+
 /* Usado em todas as paginas de região */
 .header-receita{
     display:flex;
@@ -310,6 +297,7 @@ nav a:hover{
 #ModoDePreparo-Sul{
     height: 80rem;
 }
+
 /*Pagina Sobre Nós*/
 .Titulo-SobreNos-Fundo{
     display: grid;
