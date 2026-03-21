@@ -2,21 +2,8 @@ body{
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
-/* Classes utilitárias */
-.flex-center{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-.ReceitaSubtitulo{
-    margin: 0;
-    padding: 2rem 3rem;
-    font-size: 5rem;
-    color: #70111B;
-}
-.ReceitaImg{
-    height: 25rem;
-} /*Pagina Inicial */
+
+/*Nav bar e Footer */
 nav{
     display: flex;
     justify-content: space-between;
@@ -35,6 +22,38 @@ nav a{
 nav a:hover{
     color: #a1651b;
 }
+.Footer{
+    padding: 1.7rem 0;
+    font-size: 1rem;
+    background-color: #5A3A2E;
+    color: #F5EFE4;
+}
+.Footerparagrafo{
+    margin: 0;
+}
+/* Classes utilitárias */
+.flex-center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.flex-center-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ReceitaSubtitulo{
+    margin: 0;
+    padding: 2rem 3rem;
+    font-size: 5rem;
+    color: #70111B;
+}
+.ReceitaImg{
+    height: 25rem;
+}
+
+ /*Pagina Inicial */
 .Divtitulo{
     display: flex;
     align-items: center; 
@@ -55,11 +74,7 @@ nav a:hover{
     height: 33rem;
     top: 0.5rem;
 }
-.Instrucoes{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    justify-content: center; 
+.Instrucoes{ 
     background-color: #E3BE9B;
     padding: 5rem;
     gap: 4rem;
@@ -83,9 +98,9 @@ nav a:hover{
 }
 .TituloSecao-Zero{
     text-decoration: underline;
-    text-decoration-color: #d46a2e;
     text-decoration-thickness: 0.4rem;
     text-underline-offset: 0.25rem;
+    text-decoration-color: #d46a2e;
 }
 
 .Imgcards{
@@ -100,22 +115,9 @@ nav a:hover{
     font-size: 1.6rem;
     color: #D56138;
 }
-.Footer{
-    padding: 1.7rem 0;
-    font-size: 1rem;
-    background-color: #5A3A2E;
-    color: #F5EFE4;
-}
-.Footerparagrafo{
-    margin: 0;
-}
 /* Usado nas paginas de regiões e na inicial */
 .Regioes{
     height: 30rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .TituloRegioes{
     padding-bottom: 2rem;
@@ -136,8 +138,8 @@ nav a:hover{
 }
 .region-button:hover{
     background-color:#e6ded5;
-    box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
     transform: translateY(-10px);
+    box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
 
 }
 #Button1{
@@ -176,11 +178,8 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-direction: column;
-    align-items: center;
     height: 60rem;
     background-color: #E3BE9B;
-    background-color:#E3BE9B; 
 }
 .Ingredientes-Div{
     display: flex;
@@ -347,11 +346,12 @@ nav a:hover{
 .InfoMembro h4{
     margin: 0;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 500;
     color: #D56138;
 }
 .InfoMembro p{
     margin-top: 1rem;
+    font-weight: 500;
     color: #70111B;
 }
 .ImgMembros{
