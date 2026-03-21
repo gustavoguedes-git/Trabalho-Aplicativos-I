@@ -2,7 +2,6 @@ body{
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
-
 /*Nav bar e Footer */
 nav{
     display: flex;
@@ -31,6 +30,22 @@ nav a:hover{
 .Footerparagrafo{
     margin: 0;
 }
+/* Classes utilitárias */
+.flex-center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.ReceitaSubtitulo{
+    margin: 0;
+    padding: 2rem 3rem;
+    font-size: 5rem;
+    color: #70111B;
+}
+.ReceitaImg{
+    height: 30rem;
+}
+
 /* Classes utilitárias */
 .flex-center{
     display:flex;
@@ -215,7 +230,7 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    height: 95rem;
+    height: 100rem;
     background-color: #F5EFE4;
 }
 .ModoDepreparo-Title{
@@ -278,6 +293,7 @@ nav a:hover{
 }
 /*Paginas Recitas */
 .TacacaImg{
+    height: 30rem;
     padding-top: 2rem;
 }
 .Ingredientes-sul{
@@ -288,10 +304,9 @@ nav a:hover{
     background-color:#E3BE9B; 
 }
 #Ingredientes-Div-Sul{
-    display: flex;
     height: 25rem;
-    width: 60rem;
 }
+
 #ModoDePreparo-Sul{
     height: 80rem;
 }
@@ -306,7 +321,6 @@ nav a:hover{
     text-align: center;
     margin: 0;
     font-size: 6rem;
-    text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.39);
     color: #F5EFE4;
 
 }
