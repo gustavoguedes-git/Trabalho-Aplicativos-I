@@ -279,8 +279,8 @@ nav a:hover{
     height:40%;
 }
 /*Paginas Recitas */
-.TacacaImg{
-    height: 30rem;
+.tacaca-img, 
+.feijoada-img{
     padding-top: 2rem;
 }
 .Ingredientes-sul{
