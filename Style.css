@@ -22,7 +22,7 @@ nav a{
 nav a:hover{
     transition: 0.05s;
     color: #ad651d;
-    font-size: 1.85rem;
+    font-size: 2rem;
 }
 .footer{
     padding: 1.7rem 0;
@@ -45,18 +45,18 @@ nav a:hover{
     align-items: center;
     justify-content: center;
 }
-.ReceitaSubtitulo{
+.receita-subtitulo{
     margin: 0;
     padding: 2rem 3rem;
     font-size: 5rem;
     color: #70111B;
 }
-.ReceitaImg{
+.receita-img{
     height: 25rem;
 }
 
  /*Pagina Inicial */
-.Divtitulo{
+.divtitulo{
     display: flex;
     align-items: center; 
     text-align: center;
@@ -64,28 +64,26 @@ nav a:hover{
     max-height: 23rem;
     background-color: #D56138;
 }
-.Titulo {
+.titulo{
     margin: 0;
     padding: 0px 3rem;
     font-size: 7rem;
     text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39);
     color: #F5EFE4;
 }
-.FeijoadaIMG{
+.feijoada-img{
     position: relative;
-    height: 33rem;
-    top: 0.5rem;
 }
-.Instrucoes{ 
+.instrucoes{ 
     background-color: #E3BE9B;
     padding: 5rem;
     gap: 4rem;
 }
-.ContainerCards{
+.container-cards{
     flex-wrap: wrap;
     gap: 4rem;
 }
-.Card{
+.card{
     flex-direction: column;
     height: 25rem;
     width: 17rem;
@@ -93,24 +91,24 @@ nav a:hover{
     box-shadow: 0.15rem 0.15rem 2rem 0.2rem #8a3f3f;
     background-color: #F5EFE4;
 }
-.TituloSecao{
+.titulo-secao{
     margin: 0;
     font-size: 3.2rem;
     color: #70111B;
 }
-.TituloSecao-Zero{
+.titulo-secao-zero{
     text-decoration: underline;
     text-decoration-thickness: 0.4rem;
     text-underline-offset: 0.25rem;
     text-decoration-color: #d46a2e;
 }
 
-.Imgcards{
+.imgcards{
     user-select: none;
     height:auto;
     max-width:80%;
 }
-.Cardsubtitle{
+.cardsubtitle{
     user-select: none;
     text-align: center;
     margin: 0;
@@ -119,10 +117,10 @@ nav a:hover{
 }
 
 /* Usado nas paginas de regiões e na inicial */
-.Regioes{
+.regioes{
     height: 30rem;
 }
-.TituloRegioes{
+.titulo-regioes{
     padding-bottom: 2rem;
     font-size: 2rem;
     text-align: center; 
@@ -145,27 +143,27 @@ nav a:hover{
     box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
 
 }
-#Button1{
+#button1{
     border:  solid 0.1rem #2E8B57;
     color: #2E8B57;
 }
-#Button2{
+#button2{
     border: solid 0.1rem rgb(213,97,56);
     color: #D56138;
 }
-#Button3{
+#button3{
     border: solid 0.1rem #D4A017;
     color:#D4A017;
 }
-#Button4{
+#button4{
     border: solid 0.1rem #8B1E3F;
     color: #8B1E3F;
 }
-#Button5{
+#button5{
     border:  solid 0.1rem #2C5AA0;
     color: #2C5AA0;
 }
-.BotoesRegioes{
+.botoes-regioes{
     display: flex;
     gap: 1.8rem;
 }
@@ -183,14 +181,14 @@ nav a:hover{
     height: 100%;
     line-height: 0;
 }
-.Ingredientes{
+.ingredientes{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 60rem;
     background-color: #E3BE9B;
 }
-.Ingredientes-Div{
+.ingredientes-div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,26 +198,26 @@ nav a:hover{
     box-shadow: 0.3rem 0.3rem 3rem 1rem #a6501e81;
     background-color: #F5EFE4;
 }
-.Ingredientes-Div h3{
+.ingredientes-div h3{
     margin: 0;
     padding-left: 2.5rem;
     font-size: 3rem;
     color: #70111B;
 }
-.Ingredientes-Div ul li{
+.ingredientes-div ul li{
     padding-top: 0.5rem;
     font-size: 2rem;
     color: #701119;
 }
-.Ingredientes-Div ul{
+.ingredientes-div ul{
     padding-left: 6.5rem;
     color: #D56138;
 }
-.Ingredientes-Div ul li::marker {
+.ingredientes-div ul li::marker {
     color: #D56138; 
     font-size: 2rem; 
 }
-.MododePreparo-Fundo{
+.modode-preparo-fundo{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,31 +225,31 @@ nav a:hover{
     height: 100rem;
     background-color: #F5EFE4;
 }
-.ModoDepreparo-Title{
+.modo-depreparo-title{
     margin-top: 0;
     padding-left: 6rem;
     font-size: 3rem;
     color: #70111B;
 }
-.MododePreparo-Div ol li{
+.modode-preparo-div ol li{
     padding: 1.3rem;
     font-size: 2rem;
     color: #D56138;
 }
-.MododePreparo-Div ol{
+.modode-preparo-div ol{
     padding: 1.3rem;
     padding-left: 9rem;
 }
-.MododePreparo-Div p{
+.modode-preparo-div p{
     font-size: 2rem;
     color: #70111B;
 }
-.Historia-Fundo{
+.historia-fundo{
     overflow: hidden;
     height: 80rem;
     background-color: #E3BE9B;
 }
-.Historia-Card{
+.historia-card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,13 +260,13 @@ nav a:hover{
     border-radius: 3rem;
     background-color: #F5EFE4;
 }
-.Historia-Card h2{
+.historia-card h2{
     margin: 0;
     padding-top: 3rem;
     font-size: 2.5rem;
     color: #D56138;
 }
-.Historia-Card p{
+.historia-card p{
     text-align: center;
     margin: 0;
     font-size: 1.8rem;
@@ -285,19 +283,18 @@ nav a:hover{
 .feijoada-img{
    padding-top: 2rem;
 }
-.Ingredientes-sul{
+.ingredientes-sul{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 45rem;
     background-color:#E3BE9B; 
 }
-#Ingredientes-Div-Sul{
-    display: block;
+#ingredientes-div-sul{
     height: 25rem;
 }
 
-#ModoDePreparo-Sul{
+#modo-de-preparo-sul{
     height: 80rem;
 }
 
