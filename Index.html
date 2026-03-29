@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head> <!-- Cabeçalho da página com metadados e links para estilos e fontes -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culinária do Brasil</title>
     <link rel="stylesheet" href="Style.css">
+    <!-- Importação da fonte Inter do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Ícone da página -->
     <link rel="icon" href="Imagens/Imgtitulo.ico">
 </head>
-<body>
+<body> <!-- Corpo da página -->
 
-    <nav>
-         <a href="Index.html">Menu Inicial</a>
-         <a href="SobreNos.html">Sobre nós</a>
+    <nav> <!-- Barra de navegação -->
+        <p>Menu Inicial</p>
+        <a href="SobreNos.html">Sobre Nós</a>
     </nav>
-    <header class="divtitulo">
+    <header class="div-titulo"> <!-- Cabeçalho da página inicial com título e imagem -->
         <h1 class="titulo"><strong>Culinária <br>do Brasil</strong></h1>
-        <img src="Imagens/imagens-index-html/Imgtitulo.png" alt="Imagem do título" class="feijoada-img">
+        <figure>
+            <img src="Imagens/imagens-index-html/Imgtitulo.png" alt="Culinária do Brasil" class="feijoada-img">
+        </figure>
     </header>
 
-    <section class="instrucoes flex-center-column"> 
+    <section class="instrucoes flex-center-column">  <!-- Seção de instruções com título e cards -->
         <h2 class="titulo-secao">Aprenda receitas do <span class="titulo-secao-zero">zero</span></h2>
         <div class="container-cards flex-center">
             <div class="card flex-center">
-                <img src="Imagens/imagens-index-html/IMGcard1.png" alt="Imagem card1" class="imgcards">
-                <h3 class="cardsubtitle">Veja a lista e pegue os ingredientes</h3>
+                <img src="Imagens/imagens-index-html/IMGcard1.png" alt="Imagem card 1" class="img-cards">
+                <h3 class="card-subtitle">Veja a lista e pegue os ingredientes</h3>
             </div>
             
             <div class="card flex-center">
-                <img src="Imagens/imagens-index-html/IMGcard2.png" alt="Imagem card2" class="imgcards">
-                <h3 class="cardsubtitle">Siga o modo de preparo</h3>
+                <img src="Imagens/imagens-index-html/IMGcard2.png" alt="Imagem card 2" class="img-cards">
+                <h3 class="card-subtitle">Siga o modo de preparo</h3>
             </div>
+
             <div class="card flex-center">
-                <img src="Imagens/imagens-index-html/IMGcard3.png" alt="Imagem card3"class="imgcards">
-                <h3 class="cardsubtitle">Aproveite sua refeição</h3>
+                <img src="Imagens/imagens-index-html/IMGcard3.png" alt="Imagem card 3"class="img-cards">
+                <h3 class="card-subtitle">Aproveite sua refeição</h3>
             </div>
         </div>
     </section>
 
-    <section class="regioes flex-center-column">
-         <h2 class="titulo-regioes">DE QUAL REGIÃO SERÁ A SUA RECEITA?</h2>
+    <section class="regioes flex-center-column"> <!-- Seção das regiões com título e botões -->
+        <h2 class="titulo-regioes">DE QUAL REGIÃO SERÁ A SUA RECEITA?</h2>
         <div class="botoes-regioes">
             <a href="PaginaNorte.html"> <button class="region-button" id="button1">Norte</button></a>
             <a href="PaginaNordeste.html"><button class="region-button" id="button2">Nordeste</button></a>
@@ -49,8 +54,10 @@
         </div>
     </section>
         
-        <footer class="footer flex-center">
-            <p class="footer-paragrafo">Projeto INI-2A 2026</p>
-        </footer>
+    <footer class="footer flex-center"> <!-- Rodapé com informações do projeto -->
+        <p class="footer-paragrafo">Projeto INI-2A 2026</p>
+        <p class ="footer-paragrafo-imagem">As imagens utilizadas são ilustrativas</p>
+    </footer>
+
 </body>
 </html>

@@ -25,6 +25,8 @@ nav a:hover{
     font-size: 2rem;
 }
 .footer{
+    display: flex;
+    flex-direction: column;
     padding: 1.7rem 0;
     font-size: 1rem;
     background-color: #5A3A2E;
@@ -32,6 +34,12 @@ nav a:hover{
 }
 .footer-paragrafo{
     margin: 0;
+}
+.footer-paragrafo-imagem{
+    margin: 0;
+    padding-top: 0.2rem;
+    font-size: 0.9rem;
+    color: #b4a48c;
 }
 /* Classes utilitárias */
 .flex-center{
@@ -55,8 +63,8 @@ nav a:hover{
     height: 25rem;
 }
 
- /*Pagina Inicial */
-.divtitulo{
+ /* Página Inicial */
+.div-titulo{
     display: flex;
     align-items: center; 
     text-align: center;
@@ -68,7 +76,6 @@ nav a:hover{
     margin: 0;
     padding: 0px 3rem;
     font-size: 7rem;
-    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39);
     color: #F5EFE4;
 }
 .feijoada-img{
@@ -88,7 +95,6 @@ nav a:hover{
     height: 25rem;
     width: 17rem;
     border-radius: 3rem;
-    box-shadow: 0.15rem 0.15rem 2rem 0.2rem #8a3f3f;
     background-color: #F5EFE4;
 }
 .titulo-secao{
@@ -102,13 +108,12 @@ nav a:hover{
     text-underline-offset: 0.25rem;
     text-decoration-color: #d46a2e;
 }
-
-.imgcards{
+.img-cards{
     user-select: none;
     height:auto;
     max-width:80%;
 }
-.cardsubtitle{
+.card-subtitle{
     user-select: none;
     text-align: center;
     margin: 0;
@@ -116,8 +121,9 @@ nav a:hover{
     color: #D56138;
 }
 
-/* Usado nas paginas de regiões e na inicial */
+/* Usado nas páginas de regiões e na inicial */
 .regioes{
+    background-color: #F5EFE4;
     height: 30rem;
 }
 .titulo-regioes{
@@ -135,13 +141,12 @@ nav a:hover{
     border-radius: 1.2rem;
     font-size: 1.3rem;
     transition: 0.15s;
-    background-color: rgb(245,239,228);
+    background-color: #fffefb;
 }
 .region-button:hover{
-    background-color:#e6ded5;
     transform: translateY(-10px);
     box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
-
+    background-color: #e7e6e2;
 }
 #button1{
     border:  solid 0.1rem #2E8B57;
@@ -168,7 +173,7 @@ nav a:hover{
     gap: 1.8rem;
 }
 
-/* Usado em todas as paginas de região */
+/* Usado em todas as páginas de região */
 .header-receita{
     display: flex;
     align-items: center;
@@ -195,7 +200,6 @@ nav a:hover{
     height: 40rem;
     width: 60rem;
     border-radius: 5rem;
-    box-shadow: 0.3rem 0.3rem 3rem 1rem #a6501e81;
     background-color: #F5EFE4;
 }
 .ingredientes-div h3{
@@ -213,11 +217,11 @@ nav a:hover{
     padding-left: 6.5rem;
     color: #D56138;
 }
-.ingredientes-div ul li::marker {
+.ingredientes-div ul li::marker{
     color: #D56138; 
     font-size: 2rem; 
 }
-.modode-preparo-fundo{
+.modo-de-preparo-fundo{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,22 +229,22 @@ nav a:hover{
     height: 100rem;
     background-color: #F5EFE4;
 }
-.modo-depreparo-title{
+.modo-de-preparo-title{
     margin-top: 0;
     padding-left: 6rem;
     font-size: 3rem;
     color: #70111B;
 }
-.modode-preparo-div ol li{
+.modo-de-preparo-div ol li{
     padding: 1.3rem;
     font-size: 2rem;
     color: #D56138;
 }
-.modode-preparo-div ol{
+.modo-de-preparo-div ol{
     padding: 1.3rem;
     padding-left: 9rem;
 }
-.modode-preparo-div p{
+.modo-de-preparo-div p{
     font-size: 2rem;
     color: #70111B;
 }
@@ -278,7 +282,7 @@ nav a:hover{
     width: 100%;
     height: 40%;
 }
-/*Paginas Recitas */
+/* Páginas de Receitas */
 .tacaca-img, 
 .feijoada-img{
    padding-top: 2rem;
@@ -298,17 +302,17 @@ nav a:hover{
     height: 80rem;
 }
 
-/*Pagina Sobre Nós*/
-.titulo-sobrenos-fundo{
+/* Página "Sobre Nós" */
+.titulo-sobre-nos-fundo{
     display: grid;
     place-items: center;
     height: 23rem;
     background-color: #D56138;
 }
-.titulo-sobrenos{
+.titulo-sobre-nos{
     text-align: center;
     margin: 0;
-    font-size: 6rem;
+    font-size: 5rem;
     color: #F5EFE4;
 
 }
@@ -327,7 +331,6 @@ nav a:hover{
     width: 60rem;
     border-radius: 3rem;
     background-color: #F5EFE4;
-    box-shadow: 0.3rem 0.3rem 2rem 0.5rem #b1673c83;
 }
 .membros-equipe-div h2{
     text-align: center;
