@@ -19,6 +19,7 @@ nav a{
     font: inherit; 
     color: #C66D00;
 }
+/* Efeito de aumentar a fonte no menu ao passar o mouse */
 nav a:hover{
     transition: 0.05s;
     color: #ad651d;
@@ -41,7 +42,7 @@ nav a:hover{
     font-size: 0.9rem;
     color: #b4a48c;
 }
-/* Classes utilitárias */
+/* Classes utilitárias - Reutilizáveis em várias partes */
 .flex-center{
     display:flex;
     align-items:center;
@@ -86,6 +87,7 @@ nav a:hover{
     padding: 5rem;
     gap: 4rem;
 }
+/* Container que envolve os mini cards de receitas */
 .container-cards{
     flex-wrap: wrap;
     gap: 4rem;
@@ -132,6 +134,7 @@ nav a:hover{
     text-align: center; 
     color: #70111B;
 }
+/* Estilo geral dos botões de seleção de região */
 .region-button{
     cursor: pointer;
     border-style: none;
@@ -143,11 +146,13 @@ nav a:hover{
     transition: 0.15s;
     background-color: #fffefb;
 }
+/* Efeito de flutuar ao passar o mouse no botão */
 .region-button:hover{
     transform: translateY(-10px);
     box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
     background-color: #e7e6e2;
 }
+/* Cores individuais para cada botão de região */
 #button1{
     border:  solid 0.1rem #2E8B57;
     color: #2E8B57;
@@ -193,6 +198,7 @@ nav a:hover{
     height: 60rem;
     background-color: #E3BE9B;
 }
+/* Bloco branco onde ficam os itens da lista de ingredientes */
 .ingredientes-div{
     display: flex;
     flex-direction: column;
@@ -217,6 +223,7 @@ nav a:hover{
     padding-left: 6.5rem;
     color: #D56138;
 }
+/* Estilo das bolinhas da lista */
 .ingredientes-div ul li::marker{
     color: #D56138; 
     font-size: 2rem; 
@@ -248,6 +255,7 @@ nav a:hover{
     font-size: 2rem;
     color: #70111B;
 }
+/* Seção sobre a origem histórica do prato */
 .historia-fundo{
     overflow: hidden;
     height: 80rem;
@@ -282,7 +290,7 @@ nav a:hover{
     width: 100%;
     height: 40%;
 }
-/* Páginas de Receitas */
+/* Páginas de Receitas Específicas */
 .tacaca-img, 
 .feijoada-img{
    padding-top: 2rem;
@@ -322,6 +330,7 @@ nav a:hover{
     display: grid;
     place-items: center;
 }
+/* Cartão principal que contém as fotos da equipe */
 .membros-equipe-div{
     display: flex;
     flex-direction: column;
@@ -339,6 +348,7 @@ nav a:hover{
     color: #70111B;
 
 }
+/* Alinhamento de cada integrante (Foto + Texto) */
 .card-membros{
     display: flex;
     padding-top: 1rem;
