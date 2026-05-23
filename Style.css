@@ -1,377 +1,834 @@
 body{
-    margin: 0;
-    font-family: 'Inter', sans-serif;
+margin: 0;
+font-family: 'Inter', sans-serif;
 }
 
 /*Nav bar e Footer */
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.7rem;
-    height: 9rem;
-    font-weight: 600;
-    padding: 0px 3rem;
-    color: #C66D00;
-    background-color: #F5EFE4;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 1.7rem;
+height: 9rem;
+font-weight: 600;
+padding: 0px 3rem;
+color: #C66D00;
+background-color: #F5EFE4;
 }
 nav a{
-    font: inherit; 
-    color: #C66D00;
+font: inherit; 
+color: #C66D00;
+text-decoration: none;
 }
-/* Efeito de aumentar a fonte no menu ao passar o mouse */
 nav a:hover{
-    transition: 0.05s;
-    color: #ad651d;
-    font-size: 2rem;
+transition: 0.05s;
+color: #ad651d;
+transform: scale(1.05);
+display: inline-block;
 }
 .footer{
-    display: flex;
-    flex-direction: column;
-    padding: 1.7rem 0;
-    font-size: 1rem;
-    background-color: #5A3A2E;
-    color: #F5EFE4;
+display: flex;
+flex-direction: column;
+padding: 1.7rem 0;
+font-size: 1rem;
+background-color: #5A3A2E;
+color: #F5EFE4;
+text-align: center;
 }
 .footer-paragrafo{
-    margin: 0;
+margin: 0;
 }
 .footer-paragrafo-imagem{
-    margin: 0;
-    padding-top: 0.2rem;
-    font-size: 0.9rem;
-    color: #b4a48c;
+margin: 0;
+padding-top: 0.2rem;
+font-size: 0.9rem;
+color: #b4a48c;
 }
 /* Classes utilitárias - Reutilizáveis em várias partes */
 .flex-center{
-    display:flex;
-    align-items:center;
-    justify-content:center;
+display:flex;
+align-items:center;
+justify-content:center;
 }
 .flex-center-column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 .receita-subtitulo{
-    margin: 0;
-    padding: 2rem 3rem;
-    font-size: 5rem;
-    color: #70111B;
+margin: 0;
+padding: 2rem 3rem;
+font-size: 5rem;
+color: #70111B;
 }
 .receita-img{
-    height: 25rem;
+height: 25rem;
+max-width: 100%;
+width: auto;
+max-height: 400px;
+object-fit: contain;
 }
 
- /* Página Inicial */
+/* Página Inicial */
 .div-titulo{
-    display: flex;
-    align-items: center; 
-    text-align: center;
-    height: auto;
-    max-height: 23rem;
-    background-color: #D56138;
+display: flex;
+align-items: center; 
+text-align: center;
+height: auto;
+max-height: 23rem;
+background-color: #D56138;
 }
 .titulo{
-    margin: 0;
-    padding: 0px 3rem;
-    font-size: 7rem;
-    color: #F5EFE4;
+margin: 0;
+padding: 0px 3rem;
+font-size: 7rem;
+color: #F5EFE4;
 }
 .feijoada-img{
-    position: relative;
+position: relative;
+max-width: 100%;
+height: auto;
 }
 .instrucoes{ 
-    background-color: #E3BE9B;
-    padding: 5rem;
-    gap: 4rem;
+background-color: #E3BE9B;
+padding: 5rem;
+gap: 4rem;
 }
 /* Container que envolve os mini cards de receitas */
 .container-cards{
-    flex-wrap: wrap;
-    gap: 4rem;
+flex-wrap: wrap;
+gap: 4rem;
 }
 .card{
-    flex-direction: column;
-    height: 25rem;
-    width: 17rem;
-    border-radius: 3rem;
-    background-color: #F5EFE4;
+flex-direction: column;
+height: 25rem;
+width: 17rem;
+border-radius: 3rem;
+background-color: #F5EFE4;
 }
 .titulo-secao{
-    margin: 0;
-    font-size: 3.2rem;
-    color: #70111B;
+margin: 0;
+font-size: 3.2rem;
+color: #70111B;
 }
 .titulo-secao-zero{
-    text-decoration: underline;
-    text-decoration-thickness: 0.4rem;
-    text-underline-offset: 0.25rem;
-    text-decoration-color: #d46a2e;
+text-decoration: underline;
+text-decoration-thickness: 0.4rem;
+text-underline-offset: 0.25rem;
+text-decoration-color: #d46a2e;
 }
 .img-cards{
-    user-select: none;
-    height:auto;
-    max-width:80%;
+user-select: none;
+height:auto;
+max-width:80%;
 }
 .card-subtitle{
-    user-select: none;
-    text-align: center;
-    margin: 0;
-    font-size: 1.6rem;
-    color: #D56138;
+user-select: none;
+text-align: center;
+margin: 0;
+font-size: 1.6rem;
+color: #D56138;
 }
 
 /* Usado nas páginas de regiões e na inicial */
 .regioes{
-    background-color: #F5EFE4;
-    height: 30rem;
+background-color: #F5EFE4;
+height: 30rem;
 }
 .titulo-regioes{
-    padding-bottom: 2rem;
-    font-size: 2rem;
-    text-align: center; 
-    color: #70111B;
+padding-bottom: 2rem;
+font-size: 2rem;
+text-align: center; 
+color: #70111B;
 }
 /* Estilo geral dos botões de seleção de região */
 .region-button{
-    cursor: pointer;
-    border-style: none;
-    user-select: none;
-    height: 12rem;
-    width: 11rem;
-    border-radius: 1.2rem;
-    font-size: 1.3rem;
-    transition: 0.15s;
-    background-color: #fffefb;
+cursor: pointer;
+border-style: none;
+user-select: none;
+height: 12rem;
+width: 11rem;
+border-radius: 1.2rem;
+font-size: 1.3rem;
+transition: 0.15s;
+background-color: #fffefb;
 }
 /* Efeito de flutuar ao passar o mouse no botão */
 .region-button:hover{
-    transform: translateY(-10px);
-    box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
-    background-color: #e7e6e2;
+transform: translateY(-10px);
+box-shadow: 0.1rem 0px 0.5rem 0.1rem #555;
+background-color: #e7e6e2;
 }
 /* Cores individuais para cada botão de região */
 #button1{
-    border:  solid 0.1rem #2E8B57;
-    color: #2E8B57;
+border:  solid 0.1rem #2E8B57;
+color: #2E8B57;
 }
 #button2{
-    border: solid 0.1rem rgb(213,97,56);
-    color: #D56138;
+border: solid 0.1rem rgb(213,97,56);
+color: #D56138;
 }
 #button3{
-    border: solid 0.1rem #D4A017;
-    color:#D4A017;
+border: solid 0.1rem #D4A017;
+color:#D4A017;
 }
 #button4{
-    border: solid 0.1rem #8B1E3F;
-    color: #8B1E3F;
+border: solid 0.1rem #8B1E3F;
+color: #8B1E3F;
 }
 #button5{
-    border:  solid 0.1rem #2C5AA0;
-    color: #2C5AA0;
+border:  solid 0.1rem #2C5AA0;
+color: #2C5AA0;
 }
 .botoes-regioes{
-    display: flex;
-    gap: 1.8rem;
+display: flex;
+gap: 1.8rem;
+flex-wrap: wrap;
+justify-content: center;
 }
 
-/* Usado em todas as páginas de região */
+/* ======================== PÁGINAS DE REGIÃO ======================== */
+
 .header-receita{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    background-color: #D56138;
+display: flex;
+align-items: center;
+justify-content: center;
+height: auto;
+padding: 2rem;
+background-color: #D56138;
 }
 .header-receita figure{
-    margin: 0;
-    height: 100%;
-    line-height: 0;
+margin: 0;
+display: flex;
+justify-content: center;
 }
-.ingredientes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 60rem;
-    background-color: #E3BE9B;
-}
-/* Bloco branco onde ficam os itens da lista de ingredientes */
-.ingredientes-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 40rem;
-    width: 60rem;
-    border-radius: 5rem;
-    background-color: #F5EFE4;
-}
-.ingredientes-div h3{
-    margin: 0;
-    padding-left: 2.5rem;
-    font-size: 3rem;
-    color: #70111B;
-}
-.ingredientes-div ul li{
-    padding-top: 0.5rem;
-    font-size: 2rem;
-    color: #701119;
-}
-.ingredientes-div ul{
-    padding-left: 6.5rem;
-    color: #D56138;
-}
-/* Estilo das bolinhas da lista */
-.ingredientes-div ul li::marker{
-    color: #D56138; 
-    font-size: 2rem; 
-}
-.modo-de-preparo-fundo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    height: 100rem;
-    background-color: #F5EFE4;
-}
-.modo-de-preparo-title{
-    margin-top: 0;
-    padding-left: 6rem;
-    font-size: 3rem;
-    color: #70111B;
-}
-.modo-de-preparo-div ol li{
-    padding: 1.3rem;
-    font-size: 2rem;
-    color: #D56138;
-}
-.modo-de-preparo-div ol{
-    padding: 1.3rem;
-    padding-left: 9rem;
-}
-.modo-de-preparo-div p{
-    font-size: 2rem;
-    color: #70111B;
-}
-/* Seção sobre a origem histórica do prato */
-.historia-fundo{
-    overflow: hidden;
-    height: 80rem;
-    background-color: #E3BE9B;
-}
-.historia-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    overflow: hidden;
-    width: 55rem;
-    height: 62rem;
-    border-radius: 3rem;
-    background-color: #F5EFE4;
-}
-.historia-card h2{
-    margin: 0;
-    padding-top: 3rem;
-    font-size: 2.5rem;
-    color: #D56138;
-}
-.historia-card p{
-    text-align: center;
-    margin: 0;
-    font-size: 1.8rem;
-    padding: 2rem;
-    line-height: 2.3rem;
-    color: #70111B;
-}
-.img-historia-regiao{
-    width: 100%;
-    height: 40%;
-}
-/* Páginas de Receitas Específicas */
-.tacaca-img, 
-.feijoada-img{
-   padding-top: 2rem;
-}
-.ingredientes-sul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 45rem;
-    background-color:#E3BE9B; 
-}
-#ingredientes-div-sul{
-    height: 25rem;
+.header-receita figure img{
+max-width: 100%;
+width: auto;
+max-height: 350px;
+object-fit: contain;
 }
 
-#modo-de-preparo-sul{
-    height: 80rem;
+.ingredientes{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: auto;
+min-height: 60rem;
+background-color: #E3BE9B;
+padding: 2rem 1rem;
+}
+.ingredientes-div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: auto;
+min-height: 40rem;
+width: 60rem;
+max-width: 90%;
+border-radius: 5rem;
+background-color: #F5EFE4;
+padding: 2rem;
+}
+.ingredientes-div h3{
+margin: 0;
+padding-left: 2.5rem;
+font-size: 3rem;
+color: #70111B;
+}
+.ingredientes-div ul li{
+padding-top: 0.5rem;
+font-size: 2rem;
+color: #701119;
+list-style: none;
+}
+.ingredientes-div ul{
+padding-left: 6.5rem;
+color: #D56138;
+}
+.ingredientes-div ul li::marker{
+color: #D56138; 
+font-size: 2rem; 
+}
+.modo-de-preparo-fundo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+overflow: hidden;
+height: auto;
+min-height: 100rem;
+background-color: #F5EFE4;
+padding: 2rem;
+}
+.modo-de-preparo-title{
+margin-top: 0;
+padding-left: 6rem;
+font-size: 3rem;
+color: #70111B;
+}
+.modo-de-preparo-div ol li{
+padding: 1.3rem;
+font-size: 2rem;
+color: #D56138;
+}
+.modo-de-preparo-div ol{
+padding: 1.3rem;
+padding-left: 9rem;
+list-style: none;
+}
+.modo-de-preparo-div p{
+font-size: 2rem;
+color: #70111B;
+}
+.historia-fundo{
+overflow: hidden;
+height: auto;
+min-height: 80rem;
+background-color: #E3BE9B;
+padding: 3rem 1rem;
+}
+.historia-card{
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow: hidden;
+width: 55rem;
+max-width: 90%;
+height: auto;
+min-height: 62rem;
+border-radius: 3rem;
+background-color: #F5EFE4;
+}
+.historia-card h2{
+margin: 0;
+padding-top: 3rem;
+font-size: 2.5rem;
+color: #D56138;
+text-align: center;
+}
+.historia-card p{
+text-align: center;
+margin: 0;
+font-size: 1.8rem;
+padding: 2rem;
+line-height: 2.3rem;
+color: #70111B;
+}
+.img-historia-regiao{
+width: 100%;
+height: auto;
+max-height: 40%;
+object-fit: cover;
 }
 
 /* Página "Sobre Nós" */
 .titulo-sobre-nos-fundo{
-    display: grid;
-    place-items: center;
-    height: 23rem;
-    background-color: #D56138;
+display: grid;
+place-items: center;
+height: 23rem;
+background-color: #D56138;
 }
 .titulo-sobre-nos{
-    text-align: center;
-    margin: 0;
-    font-size: 5rem;
-    color: #F5EFE4;
-
+text-align: center;
+margin: 0;
+font-size: 5rem;
+color: #F5EFE4;
 }
 .membros-equipe-fundo{
-    height: 95rem;
-    background-color: #E3BE9B;
-    display: grid;
-    place-items: center;
+height: auto;
+min-height: 95rem;
+background-color: #E3BE9B;
+display: grid;
+place-items: center;
+padding: 2rem;
 }
-/* Cartão principal que contém as fotos da equipe */
 .membros-equipe-div{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 4rem;
-    height: 85rem;
-    width: 60rem;
-    border-radius: 3rem;
-    background-color: #F5EFE4;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+padding: 4rem;
+height: auto;
+min-height: 85rem;
+width: 60rem;
+max-width: 90%;
+border-radius: 3rem;
+background-color: #F5EFE4;
 }
 .membros-equipe-div h2{
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 2.3rem;
-    color: #70111B;
-
+text-align: center;
+margin-top: 1rem;
+font-size: 2.3rem;
+color: #70111B;
 }
-/* Alinhamento de cada integrante (Foto + Texto) */
 .card-membros{
-    display: flex;
-    padding-top: 1rem;
+display: flex;
+padding-top: 1rem;
 }
 .info-membro{
-    display: flex;
-    flex-direction: column;
-    margin-left: 2rem;
+display: flex;
+flex-direction: column;
+margin-left: 2rem;
 }
 .info-membro h4{
-    margin: 0;
-    padding-top: 1.35rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #D56138;
+margin: 0;
+padding-top: 1.35rem;
+font-size: 1.4rem;
+font-weight: 500;
+color: #D56138;
 }
 .info-membro p{
-    margin-top: 1rem;
-    font-weight: 500;
-    color: #70111B;
+margin-top: 1rem;
+font-weight: 500;
+color: #70111B;
 }
 .img-membros{
    height: 20rem;
    width: 20rem;
    border-radius: 2rem;
+   object-fit: cover;
+}
+
+/* ======================== RESPONSIVO - TELAS GRANDES (1441px+) ======================== */
+@media (min-width: 1441px) {
+    .div-titulo {
+        padding: 4rem;
+        max-height: 30rem;
+    }
+    .titulo {
+        font-size: 7rem;
+    }
+    .feijoada-img {
+        max-height: 420px;
+    }
+}
+
+/* ======================== RESPONSIVO - TELAS MÉDIAS (1025px - 1440px) ======================== */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .div-titulo {
+        padding: 3rem;
+        max-height: 26rem;
+    }
+    .titulo {
+        font-size: 6rem;
+    }
+    .feijoada-img {
+        max-height: 380px;
+    }
+}
+
+/* ======================== RESPONSIVO - TELAS PEQUENAS-MÉDIAS (769px - 1024px) ======================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .div-titulo {
+        padding: 2.5rem;
+        max-height: 25rem;
+    }
+    .titulo {
+        font-size: 5rem;
+    }
+    .feijoada-img {
+        max-height: 320px;
+    }
+    .card {
+        width: 15rem;
+        height: 22rem;
+    }
+    .regioes{
+        background-color: #F5EFE4;
+        min-height: 30rem;
+        padding: 2rem 1rem 4rem;
+        height: auto;
+    }
+    .region-button {
+        width: 10rem;
+        height: 11rem;
+    }
+    .receita-subtitulo {
+        font-size: 3.5rem;
+    }
+    .ingredientes-div,
+    .historia-card,
+    .membros-equipe-div {
+        width: 80%;
+    }
+}
+
+/* ======================== RESPONSIVO - TABLETS E CELULARES GRANDES (ABAIXO DE 768px) ======================== */
+@media (max-width: 768px) {
+    /* NAV */
+    nav {
+        padding: 1rem;
+        font-size: 1.3rem;
+        height: auto;
+        min-height: 7rem;
+    }
+
+    /* HEADER - COLUNA */
+    .div-titulo {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        height: auto;
+        min-height: auto;
+        max-height: none;
+        gap: 1rem;
+    }
+    .titulo {
+        padding: 0;
+        font-size: 2.8rem;
+    }
+    .feijoada-img {
+        width: 55%;
+        max-width: 220px;
+    }
+
+    /* CARDS */
+    .instrucoes {
+        padding: 3rem 1rem;
+        gap: 2rem;
+    }
+    .titulo-secao {
+        font-size: 2rem;
+    }
+    .container-cards {
+        gap: 1.5rem;
+        justify-content: center;
+    }
+    .card {
+        width: 13rem;
+        height: 18rem;
+        border-radius: 2rem;
+    }
+    .card-subtitle {
+        font-size: 1.1rem;
+    }
+    .img-cards {
+        max-width: 70%;
+    }
+
+    /* REGIÕES */
+    .regioes {
+        height: auto;
+        min-height: 30rem;
+        padding: 2rem 1rem;
+    }
+    .titulo-regioes {
+        font-size: 1.5rem;
+    }
+    .botoes-regioes {
+        gap: 0.8rem;
+    }
+    .region-button {
+        width: 7rem;
+        height: 8rem;
+        font-size: 1rem;
+    }
+
+    /* IMAGENS DAS RECEITAS */
+    .header-receita {
+        padding: 1.5rem 1rem;
+    }
+    .header-receita figure img {
+        max-height: 220px;
+    }
+    .receita-img {
+        height: 18rem;
+        max-height: 220px;
+    }
+
+    /* TÍTULO DA RECEITA */
+    .receita-subtitulo {
+        font-size: 2.8rem;
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    /* INGREDIENTES */
+    .ingredientes {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+    .ingredientes-div {
+        min-height: auto;
+        width: 95%;
+        max-width: none;
+        padding: 1.5rem;
+        border-radius: 3rem;
+    }
+    .ingredientes-div h3 {
+        font-size: 2rem;
+        padding-left: 1rem;
+        text-align: center;
+    }
+    .ingredientes-div ul {
+        padding-left: 2rem;
+    }
+    .ingredientes-div ul li {
+        font-size: 1.3rem;
+        padding-top: 0.3rem;
+    }
+
+    /* MODO DE PREPARO */
+    .modo-de-preparo-fundo {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+    .modo-de-preparo-title {
+        padding-left: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .modo-de-preparo-div ol {
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+    .modo-de-preparo-div ol li {
+        font-size: 1.3rem;
+        padding: 0.8rem 0;
+    }
+    .modo-de-preparo-div p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    /* HISTÓRIA */
+    .historia-fundo {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+    .historia-card {
+        width: 95%;
+        max-width: none;
+        min-height: auto;
+        padding-bottom: 2rem;
+    }
+    .historia-card h2 {
+        font-size: 1.8rem;
+        padding: 2rem 1rem 0;
+    }
+    .historia-card p {
+        font-size: 1.2rem;
+        padding: 1.5rem 1rem;
+        line-height: 1.8rem;
+    }
+    .img-historia-regiao {
+        max-height: 30%;
+    }
+
+    /* SOBRE NÓS */
+    .titulo-sobre-nos-fundo {
+        height: 15rem;
+    }
+    .titulo-sobre-nos {
+        font-size: 3rem;
+        padding: 0 1rem;
+    }
+    .membros-equipe-fundo {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+    .membros-equipe-div {
+        width: 95%;
+        min-height: auto;
+        padding: 2rem 1.5rem;
+    }
+    .membros-equipe-div h2 {
+        font-size: 1.8rem;
+    }
+    .card-membros {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-membro {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .img-membros {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* ======================== RESPONSIVO - CELULARES PEQUENOS (ABAIXO DE 480px) ======================== */
+@media (max-width: 480px) {
+    /* NAV */
+    nav {
+        padding: 0.8rem;
+        font-size: 1rem;
+        min-height: 5rem;
+    }
+
+    /* HEADER */
+    .titulo {
+        font-size: 2rem;
+    }
+    .feijoada-img {
+        width: 65%;
+        max-width: 180px;
+    }
+
+    /* CARDS */
+    .instrucoes {
+        padding: 2rem 0.5rem;
+        gap: 1rem;
+    }
+    .titulo-secao {
+        font-size: 1.4rem;
+    }
+   .container-cards {
+        gap: 0.8rem;
+    }
+    .card {
+        width: 10rem;
+        height: 14rem;
+        border-radius: 1.5rem;
+    }
+    .card-subtitle {
+        font-size: 0.9rem;
+    }
+    .img-cards {
+        max-width: 65%;
+    }
+
+    /* REGIÕES */
+    .regioes {
+        min-height: auto;
+        padding: 1.5rem 0.5rem;
+    }
+    .titulo-regioes {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+    .botoes-regioes {
+        gap: 0.5rem;
+    }
+    .region-button {
+        width: 5.5rem;
+        height: 6rem;
+        font-size: 0.8rem;
+        border-radius: 0.8rem;
+    }
+
+    /* IMAGENS DAS RECEITAS */
+    .header-receita {
+        padding: 1rem 0.5rem;
+    }
+    .header-receita figure img {
+        max-height: 160px;
+    }
+    .receita-img {
+        height: 14rem;
+        max-height: 160px;
+    }
+
+    /* TÍTULO DA RECEITA */
+    .receita-subtitulo {
+        font-size: 2rem;
+        padding: 1rem 0.5rem;
+    }
+
+    /* INGREDIENTES */
+    .ingredientes {
+        padding: 1.5rem 0.5rem;
+    }
+    .ingredientes-div {
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+    .ingredientes-div h3 {
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+    }
+    .ingredientes-div ul {
+        padding-left: 1.5rem;
+    }
+    .ingredientes-div ul li {
+        font-size: 1rem;
+        padding-top: 0.2rem;
+    }
+
+    /* MODO DE PREPARO */
+    .modo-de-preparo-fundo {
+        padding: 1.5rem 0.5rem;
+    }
+    .modo-de-preparo-title {
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+    }
+    .modo-de-preparo-div ol {
+        padding-left: 1.5rem;
+        padding-right: 0.5rem;
+    }
+    .modo-de-preparo-div ol li {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+    .modo-de-preparo-div p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    /* HISTÓRIA */
+    .historia-fundo {
+        padding: 1.5rem 0.5rem;
+    }
+    .historia-card {
+        border-radius: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .historia-card h2 {
+        font-size: 1.4rem;
+        padding: 1rem 0.5rem 0;
+    }
+    .historia-card p {
+        font-size: 1rem;
+        padding: 1rem 0.5rem;
+        line-height: 1.5rem;
+    }
+    .img-historia-regiao {
+        max-height: 25%;
+    }
+
+    /* SOBRE NÓS */
+    .titulo-sobre-nos-fundo {
+        height: 12rem;
+    }
+    .titulo-sobre-nos {
+        font-size: 2rem;
+    }
+    .membros-equipe-fundo {
+        padding: 1rem 0.5rem;
+    }
+    .membros-equipe-div {
+        padding: 1.5rem 1rem;
+        border-radius: 1.5rem;
+    }
+    .membros-equipe-div h2 {
+        font-size: 1.5rem;
+    }
+    .img-membros {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 1.5rem;
+    }
+    .info-membro h4 {
+        font-size: 1.1rem;
+    }
+    .info-membro p {
+        font-size: 0.9rem;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 1rem 0.5rem;
+        font-size: 0.85rem;
+    }
+    .footer-paragrafo-imagem {
+        font-size: 0.75rem;
+    }
 }
